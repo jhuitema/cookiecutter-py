@@ -1,0 +1,10 @@
+{
+    "package_name": "My Package",
+    "package_slug": "{{ cookiecutter.package_name|lower|replace(' ','-') }}",
+    "module_name": "{{ cookiecutter.package_name|lower|replace(' ','_') }}",
+    "description": "One sentence description of the package.",
+    "author": "Josh Huitema",
+    "author_email": "joshhuitema@gmail.com",
+    "github_username": "jhuitema",
+    "pypi_username": "{{ cookiecutter.github_username }}"
+}

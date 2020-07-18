@@ -1,0 +1,7 @@
+include pyproject.toml
+include CONTRIBUTING.rst
+include README.rst
+include VERSION
+include src/*/VERSION
+recursive-include data *
+recursive-include src *.py
