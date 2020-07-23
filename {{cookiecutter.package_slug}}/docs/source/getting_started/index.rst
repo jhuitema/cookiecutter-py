@@ -1,12 +1,18 @@
+.. _getting_started:
+
 ###############
 Getting Started
 ###############
 
-.. FIXME: Fix the description
+These tutorials will allow you to get started using this library. They
+will go step-by-step through the process of using the package for a
+variety of scenarios.
 
-Introductory tutorials to help you get familiar with the basic concepts
-established by this package.
+.. See https://documentation.divio.com/tutorials/ for inspiration
+
+.. contents::
+    :local:
 
 .. todo::
 
-    Write this section.
+    Fill in this section.

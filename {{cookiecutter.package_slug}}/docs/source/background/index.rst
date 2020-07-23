@@ -1,9 +1,15 @@
+.. _background:
+
 ##########
 Background
 ##########
 
-Explanation of why this package exists and how it came to be.
+Here you’ll find information related to why this package exists. This
+page will explain the main use cases and the decisions made to get to
+this point. This page will also explain the reliance on other libraries
+and potential alternatives.
 
+.. See https://documentation.divio.com/explanation/ for inspiration
 
 *******
 Genesis
@@ -14,12 +20,18 @@ Genesis
     Write this section.
 
 
-.. FIXME: Add the other sections
+*********
+Use Cases
+*********
+
+.. todo::
+
+    Write this section.
 
 
-*******
-Related
-*******
+****************
+Related Projects
+****************
 
 .. todo::
 

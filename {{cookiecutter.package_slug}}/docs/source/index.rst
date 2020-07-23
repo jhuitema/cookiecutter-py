@@ -1,35 +1,36 @@
-.. Test Project documentation master file, created by
-   sphinx-quickstart on Fri Jul 17 17:20:41 2020.
-   You can adapt this file completely to your liking, but it should at least
-   contain the root `toctree` directive.
+.. _home:
 
-Welcome to Test Project's documentation!
-========================================
+Welcome to {{ cookiecutter.package_name }}'s documentation!
+========================================{{ "=" * cookiecutter.package_name|length }}
 
-.. toctree::
-    :maxdepth: 2
-    :caption: Contents:
+{{ cookiecutter.description }}
 
-.. FIXME: Fix the descriptions
+.. See https://documentation.divio.com/structure/ for inspiration
 
 Getting Started
 ---------------
 
-Get started with a hands-on introduction to this package.
+:ref:`getting_started` consists of tutorials that take you by the hand
+through a series of steps to use this package. Start here if you’re new
+to this package.
 
 .. toctree::
+    :maxdepth: 3
     :titlesonly:
 
     getting_started/index
 
 
-How-to guides
+How-To Guides
 -------------
 
-Step-by-step guides for the developer covering key operations and
-procedures.
+:ref:`howto` are recipes. They guide you through the steps involved in
+addressing key problems and use-cases. They are more advanced than the
+tutorials in the :ref:`getting_started` section and assume some
+knowledge of how this package works.
 
 .. toctree::
+    :maxdepth: 3
     :titlesonly:
 
     howto/index
@@ -38,24 +39,32 @@ procedures.
 Reference
 ---------
 
-Technical reference - tools, components and commands
+:ref:`reference` guides contain user reference for the interfaces and
+technical reference for APIs. They describe how it works and how to use
+it but assume that you have a basic understanding of key concepts.
+Information related to maintaining the package can also be found in this
+section.
 
 .. toctree::
+    :maxdepth: 3
     :titlesonly:
 
     reference/index
+    glossary
 
 
 Background
 ----------
 
-Explanation and discussion of key topics.
+:ref:`background` discusses key topics and concepts at a fairly high
+level and provides useful background information and explanation about
+the package.
 
 .. toctree::
+    :maxdepth: 2
     :titlesonly:
 
     background/index
-    glossary
 
 
 Indices and tables
@@ -64,3 +73,11 @@ Indices and tables
 * :ref:`genindex`
 * :ref:`modindex`
 * :ref:`search`
+* :ref:`relnotes`
+
+.. This toctree adds the Release Notes to the sidebar without adding a
+.. visible toctree. This is useful since the relnotes are linked above
+.. toctree::
+    :hidden:
+
+    release_notes

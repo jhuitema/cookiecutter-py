@@ -1,7 +1,8 @@
-include pyproject.toml
 include CONTRIBUTING.rst
+include pyproject.toml
 include README.rst
-include VERSION
+include release_notes.rst
 include src/*/VERSION
+include VERSION
 recursive-include data *
 recursive-include src *.py

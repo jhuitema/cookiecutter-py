@@ -1,6 +1,9 @@
 """Tests for the {{ cookiecutter.module_name }} module."""
 
 
+import importlib
+import pkgutil
+
 import {{ cookiecutter.module_name }}
 
 
@@ -12,4 +15,8 @@ def test_version():
 
 def test_imports():
     """Test the submodules all import."""
-    # FIXME: Actually add the test
+    package = {{ cookiecutter.module_name }}
+    prefix = package.__name__ + "."
+    for _, modname, _ in pkgutil.walk_packages(package.__path__, prefix):
+        importlib.import_module(modname)
+

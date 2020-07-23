@@ -14,7 +14,7 @@ import os
 
 # -- Project information -----------------------------------------------
 
-project = "Test Project"
+project = "{{ cookiecutter.package_name }}"
 copyright = "2020, Josh Huitema"
 author = "Josh Huitema"
 
@@ -34,10 +34,12 @@ version = release.split("-", 1)[0]
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
-    "sphinx_rtd_theme",
-    "sphinx.ext.doctest",
     "sphinx.ext.autodoc",
+    "sphinx.ext.doctest",
+    "sphinx.ext.graphviz",
     "sphinx.ext.inheritance_diagram",
+    "sphinx.ext.napoleon",
+    "sphinx_rtd_theme",
 ]
 
 # Add any paths that contain templates here, relative to this directory.
